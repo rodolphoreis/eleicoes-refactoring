@@ -1,0 +1,15 @@
+.App {
+  margin: 200px auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .App {
+    margin: 100px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
