@@ -99,14 +99,25 @@ function App() {
     } else if (podeVotar) {
       return (
         <div className="podeVotar">
-          <label htmlFor="voto">Digite o partido em que deseja votar:</label>
-          <input
-            type="text"
+          <label htmlFor="voto" className="label_select">
+            Escolha o partido em que deseja votar:
+          </label>
+          <select
             id="voto"
             value={voto}
-            className="voto"
+            required
             onChange={(e) => setVoto(e.target.value)}
-          />
+          >
+            <option value="">Escolher Partido</option>
+            <option value="ps">Partido Socialista</option>
+            <option value="psd">Partido Social Democrata</option>
+            <option value="ch">Chega</option>
+            <option value="il">Iniciativa Liberal</option>
+            <option value="be">Bloco de Esquerda</option>
+            <option value="pcp">Partido Comunista Português</option>
+            <option value="nulo">Nulo</option>
+          </select>
+
           <button className="btn" onClick={handleVotar}>
             Votar
           </button>
@@ -157,6 +168,7 @@ function App() {
             width: "150px",
             marginTop: "30px",
             fontWeight: "bold",
+            marginLeft: "5px",
           }}
         >
           Resultados
