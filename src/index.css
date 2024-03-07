@@ -55,7 +55,7 @@ label {
 input {
   box-sizing: border-box;
   border: none;
-  border: 3px solid #828282;
+  border: 2px solid #828282;
   padding: 10px 0;
   background-color: transparent;
   margin-bottom: 5px;
@@ -74,11 +74,11 @@ input {
   margin-right: 20px;
 }
 .btn {
-  background-color: #1a8918;
+  background-color: #0f730c;
   color: #fff;
   text-align: center;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 6px;
   width: 120px;
   font-weight: bold;
   border: none;
@@ -104,6 +104,22 @@ input {
 .btn:hover {
   background-color: #0f730c;
   color: #fff;
+}
+
+select {
+  height: 56px;
+  margin-right: 24px;
+  box-sizing: border-box;
+  border: 2px solid #828282;
+  padding: 5px 10px;
+  background-color: transparent;
+  border-radius: 8px;
+  font-size: 19px;
+  outline: 0;
+}
+
+.label_select {
+  margin-bottom: 38px;
 }
 
 @media (max-width: 400px) {
@@ -136,6 +152,7 @@ input {
     margin: 20px 8px 30px;
   }
   .label_and_input {
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,11 +170,18 @@ input {
     padding: 8px;
     width: 150px;
     border-radius: 8px;
+    margin-right: 0;
   }
-  .voto {
-    margin-right: 20px;
-    border-radius: 8px;
+  select {
+    margin-left: 32px;
+    font-size: 15px;
+    padding: 4px 6px;
+    height: 43px;
   }
+  .label_select {
+    margin-bottom: 18px;
+  }
+
   .btn {
     font-size: 20px;
   }
