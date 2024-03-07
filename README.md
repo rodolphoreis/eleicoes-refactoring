@@ -38,7 +38,8 @@ json-server --watch db.json --port 3001
 Executar o Aplicativo:
 Com o JSON Server em execução, você pode iniciar o aplicativo com o seguinte comando:
 
-npm start
+npm run dev  &&  npm run backend
+
 Isso iniciará o aplicativo em modo de desenvolvimento. 
 Abra seu navegador e acesse http://localhost:3000 para visualizar o aplicativo.
 
